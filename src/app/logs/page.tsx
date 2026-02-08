@@ -183,7 +183,7 @@ export default function LogsPage() {
                 
                 {/* Details (on hover) */}
                 <span className="text-neutral-600 text-xs opacity-0 group-hover:opacity-100 transition-opacity max-w-xs truncate">
-                  {log.details?.toolCallId && `#${String(log.details.toolCallId).slice(-8)}`}
+                  {log.details?.toolCallId ? `#${String(log.details.toolCallId).slice(-8)}` : ''}
                 </span>
               </div>
             ))}
